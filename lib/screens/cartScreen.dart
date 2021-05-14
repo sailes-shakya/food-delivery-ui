@@ -70,7 +70,11 @@ class Cartscreen extends StatelessWidget {
        Expanded(
          child: Container(
            padding:EdgeInsets.all(10),
-           child: Column(children: [
+           child: Column(
+             mainAxisAlignment: MainAxisAlignment.start,
+             crossAxisAlignment: CrossAxisAlignment.start,
+             children: [
+
              Text(food.name,style: TextStyle(fontSize: 20,)),
              Text(currentUser.cart[index].restaurant.name),
              SizedBox(height: 10,),
